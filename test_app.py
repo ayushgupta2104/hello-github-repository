@@ -4,10 +4,9 @@ from app import hello_world
 class TestHelloWorld(unittest.TestCase):  
   
   def test_hello_world_message(self):        
-    self.assertEqual(            
-      hello_world(),            
-      "Hello, devops!"      
-  )
-  
+    self.assertEqual(hello_world(), "Hello, devops!")
+    
+  def test_hello_world_type(self):
+    self.assertIsInstance(hello_world(), str)
   if __name__ == "__main__":    
     unittest.main()
