@@ -1,6 +1,6 @@
 
 import unittest
-from app import hello_world
+from app import hello_world,welcome_message
 class TestHelloWorld(unittest.TestCase):  
   
   def test_hello_world_message(self):        
